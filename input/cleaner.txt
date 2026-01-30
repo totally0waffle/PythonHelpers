@@ -1,0 +1,1957 @@
+army_tradition
+army_tradition = int
+
+army_tradition_decay
+army_tradition_decay = float
+
+army_tradition_from_battle
+army_tradition_from_battle = float
+
+yearly_army_professionalism
+yearly_army_professionalism = float
+
+drill_gain_modifier
+drill_gain_modifier = float
+
+drill_decay_modifier
+drill_decay_modifier = float
+
+infantry_cost
+infantry_cost = float
+
+infantry_power
+infantry_power = float
+
+infantry_fire
+infantry_fire = int
+
+infantry_shock
+infantry_shock = int
+
+cavalry_cost
+cavalry_cost = float
+
+cavalry_power
+cavalry_power = float
+
+cavalry_fire
+cavalry_fire = int
+
+cavalry_shock
+cavalry_shock = int
+
+artillery_cost
+artillery_cost = float
+
+artillery_power
+artillery_power = float
+
+artillery_fire
+artillery_fire = int
+
+artillery_shock
+artillery_shock = int
+
+cav_to_inf_ratio
+cav_to_inf_ratio = float
+
+cavalry_flanking
+cavalry_flanking = float
+
+artillery_levels_available_vs_fort
+artillery_levels_available_vs_fort = int
+
+artillery_level_modifier
+artillery_level_modifier = int
+
+backrow_artillery_damage
+backrow_artillery_damage = float
+
+discipline
+discipline = float
+
+land_morale
+land_morale = float
+
+land_morale_constant
+land_morale_constant = float
+
+movement_speed
+movement_speed = float
+
+fire_damage
+fire_damage = float
+
+fire_damage_received
+fire_damage_received = float
+
+shock_damage
+shock_damage = float
+
+shock_damage_received
+shock_damage_received = float
+
+morale_damage
+morale_damage = float
+
+morale_damage_received
+morale_damage_received = float
+
+recover_army_morale_speed
+recover_army_morale_speed = float
+
+reserves_organisation
+reserves_organisation = float
+
+land_attrition
+land_attrition = float
+
+reinforce_cost_modifier
+reinforce_cost_modifier = float
+
+no_cost_for_reinforcing
+no_cost_for_reinforcing = bool
+
+reinforce_speed
+reinforce_speed = float
+
+manpower_recovery_speed
+manpower_recovery_speed = float
+
+global_manpower
+global_manpower = int
+
+global_manpower_modifier
+global_manpower_modifier = float
+
+global_regiment_cost
+global_regiment_cost = float
+
+global_regiment_recruit_speed
+global_regiment_recruit_speed = float
+
+global_supply_limit_modifier
+global_supply_limit_modifier = float
+
+land_forcelimit
+land_forcelimit = int
+
+land_forcelimit_modifier
+land_forcelimit_modifier = float
+
+land_maintenance_modifier
+land_maintenance_modifier = float
+
+possible_condottieri
+possible_condottieri = int
+
+hostile_attrition
+hostile_attrition = int
+
+max_hostile_attrition
+max_hostile_attrition = int
+
+siege_ability
+siege_ability = float
+
+artillery_barrage_cost
+artillery_barrage_cost = float
+
+assault_fort_cost_modifier
+assault_fort_cost_modifier = float
+
+assault_fort_ability
+assault_fort_ability = float
+
+defensiveness
+defensiveness = float
+
+garrison_size
+garrison_size = float
+
+global_garrison_growth
+global_garrison_growth = float
+
+garrison_damage
+garrison_damage = float
+
+fort_maintenance_modifier
+fort_maintenance_modifier = float
+
+rival_border_fort_maintenance
+rival_border_fort_maintenance = float
+
+war_exhaustion
+war_exhaustion = float
+
+war_exhaustion_cost
+war_exhaustion_cost = float
+
+leader_land_fire
+leader_land_fire = int
+
+leader_land_manuever
+leader_land_manuever = int
+
+leader_land_shock
+leader_land_shock = int
+
+leader_siege
+leader_siege = int
+
+max_general_fire
+max_general_fire = int
+
+max_general_maneuver
+max_general_maneuver = int
+
+max_general_shock
+max_general_shock = int
+
+max_general_siege
+max_general_siege = int
+
+general_cost
+general_cost = float
+
+free_leader_pool
+free_leader_pool = int
+
+free_land_leader_pool
+free_land_leader_pool = int
+
+free_navy_leader_pool
+free_navy_leader_pool = int
+
+raze_power_gain
+raze_power_gain = float
+
+loot_amount
+loot_amount = float
+
+available_province_loot
+available_province_loot = float
+
+prestige_from_land
+prestige_from_land = float
+
+war_taxes_cost_modifier
+war_taxes_cost_modifier = float
+
+leader_cost
+leader_cost = float
+
+may_recruit_female_generals
+may_recruit_female_generals = bool
+
+manpower_in_true_faith_provinces
+manpower_in_true_faith_provinces= float
+
+regiment_manpower_usage
+regiment_manpower_usage = float
+
+military_tactics
+military_tactics = float
+
+capped_by_forcelimit
+capped_by_forcelimit = bool
+
+global_attacker_dice_roll_bonus
+global_attacker_dice_roll_bonus = int
+
+global_defender_dice_roll_bonus
+global_defender_dice_roll_bonus = int
+
+own_territory_dice_roll_bonus
+own_territory_dice_roll_bonus = int
+
+manpower_in_accepted_culture_provinces
+manpower_in_accepted_culture_provinces = float
+
+manpower_in_culture_group_provinces
+manpower_in_culture_group_provinces = float
+
+manpower_in_own_culture_provinces
+manpower_in_own_culture_provinces = float
+
+may_build_supply_depot
+may_build_supply_depot = bool
+
+may_refill_garrison
+may_refill_garrison = bool
+
+may_return_manpower_on_disband
+may_return_manpower_on_disband = bool
+
+attack_bonus_in_capital_terrain
+attack_bonus_in_capital_terrain = int
+
+can_bypass_forts
+can_bypass_forts = bool
+
+force_march_free
+force_march_free = bool
+
+enable_forced_march
+enable_forced_march = bool
+
+warscore_from_battles_modifier
+warscore_from_battles_modifier = float
+
+mercenary_cost
+mercenary_cost = float
+
+merc_maintenance_modifier
+merc_maintenance_modifier = float
+
+mercenary_discipline
+mercenary_discipline = float
+
+mercenary_manpower
+mercenary_manpower = float
+
+merc_leader_army_tradition
+merc_leader_army_tradition = float
+
+allow_mercenary_drill
+allow_mercenary_drill = bool
+
+merc_independent_from_trade_range
+merc_independent_from_trade_range = bool
+
+allow_mercenaries_to_split
+allow_mercenaries_to_split = bool
+
+special_unit_forcelimit
+special_unit_forcelimit = float
+
+special_unit_cost_modifier
+special_unit_cost_modifier = float
+
+special_unit_manpower_cost_modifier
+special_unit_manpower_cost_modifier = float
+
+has_marines
+has_marines = bool
+
+allowed_marine_fraction
+allowed_marine_fraction = float
+
+has_banners
+has_banners = bool
+
+amount_of_banners
+amount_of_banners = float
+
+can_recruit_cawa
+can_recruit_cawa = bool
+
+amount_of_cawa
+amount_of_cawa = float
+
+cawa_cost_modifier
+cawa_cost_modifier = float
+
+has_carolean
+has_carolean = bool
+
+amount_of_carolean
+amount_of_carolean = float
+
+can_recruit_hussars
+can_recruit_hussars = bool
+
+amount_of_hussars
+amount_of_hussars = int
+
+hussars_cost_modifier
+hussars_cost_modifier = float
+
+can_recruit_janissaries
+can_recruit_janissaries = bool
+
+janissary_cost_modifier
+janissary_cost_modifier = float
+
+allow_janissaries_from_own_faith
+allow_janissaries_from_own_faith = bool
+
+can_recruit_cossacks
+can_recruit_cossacks = bool
+
+allowed_cossack_fraction
+allowed_cossack_fraction = float
+
+can_recruit_rajputs
+can_recruit_rajputs = bool
+
+allowed_rajput_fraction
+allowed_rajput_fraction = float
+
+can_recruit_revolutionary_guards
+can_recruit_revolutionary_guards = bool
+
+allowed_rev_guard_fraction
+allowed_rev_guard_fraction = float
+
+has_streltsy
+has_streltsy = bool
+
+allowed_streltsy_fraction
+allowed_streltsy_fraction = float
+
+amount_of_streltsy
+amount_of_streltsy = int
+
+has_tercio
+has_tercio = bool
+
+allowed_tercio_fraction
+allowed_tercio_fraction = float
+
+amount_of_tercio
+amount_of_tercio = int
+
+has_samurai
+has_samurai = bool
+
+allowed_samurai_fraction
+allowed_samurai_fraction = float
+
+amount_of_samurai
+amount_of_samurai = int
+
+has_musketeer
+has_musketeer = bool
+
+allowed_musketeer_fraction
+allowed_musketeer_fraction = float
+
+amount_of_musketeers
+amount_of_musketeers = int
+
+has_mamluks
+has_mamluks = bool
+
+allowed_mamluks_fraction
+allowed_mamluks_fraction = float
+
+amount_of_mamluks
+amount_of_mamluks = int
+
+has_qizilbash
+has_qizilbash = bool
+
+allowed_qizilbash_fraction
+allowed_qizilbash_fraction = float
+
+amount_of_qizilbash
+amount_of_qizilbash = int
+
+navy_tradition
+navy_tradition = int
+
+navy_tradition_decay
+navy_tradition_decay = float
+
+naval_tradition_from_battle
+naval_tradition_from_battle = float
+
+naval_tradition_from_trade
+naval_tradition_from_trade = float
+
+heavy_ship_cost
+heavy_ship_cost = float
+
+heavy_ship_power
+heavy_ship_power = float
+
+light_ship_cost
+light_ship_cost = float
+
+light_ship_power
+light_ship_power = float
+
+galley_cost
+galley_cost = float
+
+galley_power
+galley_power = float
+
+transport_cost
+transport_cost = float
+
+transport_power
+transport_power = float
+
+global_ship_cost
+global_ship_cost = float
+
+global_ship_recruit_speed
+global_ship_recruit_speed = float
+
+global_ship_repair
+global_ship_repair = float
+
+naval_forcelimit
+naval_forcelimit = int
+
+naval_forcelimit_modifier
+naval_forcelimit_modifier = float
+
+naval_maintenance_modifier
+naval_maintenance_modifier = float
+
+global_sailors
+global_sailors = int
+
+global_sailors_modifier
+global_sailors_modifier = float
+
+sailor_maintenance_modifer
+sailor_maintenance_modifer = float
+
+sailors_recovery_speed
+sailors_recovery_speed = float
+
+blockade_efficiency
+blockade_efficiency = float
+
+siege_blockade_progress
+siege_blockade_progress = int
+
+capture_ship_chance
+capture_ship_chance = float
+
+global_naval_engagement_modifier
+global_naval_engagement_modifier = float
+
+global_naval_engagement
+global_naval_engagement = int
+
+naval_attrition
+naval_attrition = float
+
+naval_morale
+naval_morale = float
+
+naval_morale_constant
+naval_morale_constant = float
+
+naval_morale_damage
+naval_morale_damage = float
+
+naval_morale_damage_received
+naval_morale_damage_received = float
+
+ship_durability
+ship_durability = float
+
+sunk_ship_morale_hit_recieved
+sunk_ship_morale_hit_recieved = float
+
+recover_navy_morale_speed
+recover_navy_morale_speed = float
+
+prestige_from_naval
+prestige_from_naval = float
+
+leader_naval_fire
+leader_naval_fire = int
+
+leader_naval_manuever
+leader_naval_manuever = int
+
+leader_naval_shock
+leader_naval_shock = int
+
+max_admiral_fire
+max_admiral_fire = int
+
+max_admiral_maneuver
+max_admiral_maneuver = int
+
+max_admiral_shock
+max_admiral_shock = int
+
+max_admiral_siege
+max_admiral_siege = int
+
+own_coast_naval_combat_bonus
+own_coast_naval_combat_bonus = bool
+
+admiral_cost
+admiral_cost = float
+
+global_naval_barrage_cost
+global_naval_barrage_cost = float
+
+flagship_cost
+flagship_cost = float
+
+disengagement_chance
+disengagement_chance = float
+
+transport_attrition
+transport_attrition = float
+
+landing_penalty
+landing_penalty = int
+
+regiment_disembark_speed
+regiment_disembark_speed = float
+
+may_perform_slave_raid
+may_perform_slave_raid = bool
+
+may_perform_slave_raid_on_same_religion
+may_perform_slave_raid_on_same_religion = bool
+
+coast_raid_range
+coast_raid_range = int
+
+sea_repair
+sea_repair = bool
+
+movement_speed_in_fleet_modifier
+movement_speed_in_fleet_modifier = int
+
+max_flagships
+max_flagships = int
+
+number_of_cannons
+number_of_cannons = int
+
+number_of_cannons_modifier
+number_of_cannons_modifier = float
+
+heavy_ship_number_of_cannons_modifier
+heavy_ship_number_of_cannons_modifier = float
+
+light_ship_number_of_cannons_modifier
+light_ship_number_of_cannons_modifier = float
+
+galley_number_of_cannons_modifier
+galley_number_of_cannons_modifier = float
+
+transport_number_of_cannons_modifier
+transport_number_of_cannons_modifier = float
+
+hull_size
+hull_size = int
+
+hull_size_modifier
+hull_size_modifier = float
+
+heavy_ship_hull_size_modifier
+heavy_ship_hull_size_modifier = float
+
+light_ship_hull_size_modifier
+light_ship_hull_size_modifier = float
+
+galley_hull_size_modifier
+galley_hull_size_modifier = float
+
+transport_hull_size_modifier
+transport_hull_size_modifier = float
+
+engagement_cost
+engagement_cost = int
+
+engagement_cost_modifier
+engagement_cost_modifier = float
+
+ship_trade_power
+ship_trade_power = int
+
+ship_trade_power_modifier
+ship_trade_power_modifier = float
+
+can_transport_units
+can_transport_units = bool
+
+admiral_skill_gain_modifier
+admiral_skill_gain_modifier = float
+
+flagship_durability
+flagship_durability = int
+
+flagship_morale
+flagship_morale = int
+
+flagship_naval_engagement_modifier
+flagship_naval_engagement_modifier = int
+
+movement_speed_onto_off_boat_modifier
+movement_speed_onto_off_boat_modifier = float
+
+flagship_landing_penalty
+flagship_landing_penalty = int
+
+number_of_cannons_flagship_modifier
+number_of_cannons_flagship_modifier = float
+
+number_of_cannons_flagship
+number_of_cannons_flagship = int
+
+naval_maintenance_flagship_modifier
+naval_maintenance_flagship_modifier = float
+
+trade_power_in_fleet_modifier
+trade_power_in_fleet_modifier = int
+
+morale_in_fleet_modifier
+morale_in_fleet_modifier = float
+
+blockade_impact_on_siege_in_fleet_modifier
+blockade_impact_on_siege_in_fleet_modifier = float
+
+exploration_mission_range_in_fleet_modifier
+exploration_mission_range_in_fleet_modifier = int
+
+barrage_cost_in_fleet_modifier
+barrage_cost_in_fleet_modifier = float
+
+naval_attrition_in_fleet_modifier
+naval_attrition_in_fleet_modifier = float
+
+privateering_efficiency_in_fleet_modifier
+privateering_efficiency_in_fleet_modifier = float
+
+prestige_from_battles_in_fleet_modifier
+prestige_from_battles_in_fleet_modifier = int
+
+naval_tradition_in_fleet_modifier
+naval_tradition_in_fleet_modifier = int
+
+cannons_for_hunting_pirates_in_fleet
+cannons_for_hunting_pirates_in_fleet = int
+
+has_geobukseon
+has_geobukseon = bool
+
+allowed_geobukseon_fraction
+allowed_geobukseon_fraction = float
+
+amount_of_geobukseon
+amount_of_geobukseon = int
+
+has_galleass
+has_galleass = bool
+
+allowed_galleass_fraction
+allowed_galleass_fraction = float
+
+amount_of_galleass
+amount_of_galleass = int
+
+has_voc_indiamen
+has_voc_indiamen = bool
+
+allowed_voc_indiamen_fraction
+allowed_voc_indiamen_fraction = float
+
+amount_of_voc_indiamen
+amount_of_voc_indiamen = int
+
+has_man_of_war
+has_man_of_war = bool
+
+allowed_man_of_war_fraction
+allowed_man_of_war_fraction = float
+
+amount_of_man_of_war
+amount_of_man_of_war = int
+
+has_galleon
+has_galleon = bool
+
+allowed_galleon_fraction
+allowed_galleon_fraction = float
+
+amount_of_galleon
+amount_of_galleon = int
+
+has_caravel
+has_caravel = bool
+
+allowed_caravel_fraction
+allowed_caravel_fraction = float
+
+amount_of_caravel
+amount_of_caravel = int
+
+diplomats
+diplomats = int
+
+diplomatic_reputation
+diplomatic_reputation = int
+
+diplomatic_upkeep
+diplomatic_upkeep = int
+
+envoy_travel_time
+envoy_travel_time = float
+
+improve_relation_modifier
+improve_relation_modifier = float
+
+ae_impact
+ae_impact = float
+
+diplomatic_annexation_cost
+diplomatic_annexation_cost = float
+
+province_warscore_cost
+province_warscore_cost = float
+
+unjustified_demands
+unjustified_demands = float
+
+rival_change_cost
+rival_change_cost = float
+
+justify_trade_conflict_cost
+justify_trade_conflict_cost = float
+
+stability_cost_to_declare_war
+stability_cost_to_declare_war = int
+
+accept_vassalization_reasons
+accept_vassalization_reasons = int
+
+transfer_trade_power_reasons
+transfer_trade_power_reasons = int
+
+monthly_federation_favor_growth
+monthly_federation_favor_growth = float
+
+monthly_favor_modifier
+monthly_favor_modifier = float
+
+cb_on_overseas
+cb_on_overseas = bool
+
+cb_on_primitives
+cb_on_primitives = bool
+
+idea_claim_colonies
+idea_claim_colonies = bool
+
+cb_on_government_enemies
+cb_on_government_enemies = bool
+
+cb_on_religious_enemies
+cb_on_religious_enemies = bool
+
+reduced_stab_impacts
+reduced_stab_impacts = bool
+
+can_fabricate_for_vassals
+can_fabricate_for_vassals = bool
+
+global_tax_income
+global_tax_income = int
+
+global_tax_modifier
+global_tax_modifier = float
+
+production_efficiency
+production_efficiency = float
+
+state_maintenance_modifier
+state_maintenance_modifier = float
+
+inflation_action_cost
+inflation_action_cost = float
+
+may_not_reduce_inflation
+may_not_reduce_inflation = bool
+
+inflation_reduction
+inflation_reduction = float
+
+monthly_gold_inflation_modifier
+monthly_gold_inflation_modifier = float
+
+gold_depletion_chance_modifier
+gold_depletion_chance_modifier = float
+
+interest
+interest = int
+
+can_not_build_buildings
+can_not_build_buildings = bool
+
+development_cost
+development_cost = float
+
+development_cost_in_primary_culture
+development_cost_in_primary_culture = float
+
+development_cost_modifier
+development_cost_modifier = float
+
+tribal_development_growth
+tribal_development_growth = float
+
+add_tribal_land_cost
+add_tribal_land_cost = float
+
+settle_cost
+settle_cost = float
+
+global_allowed_num_of_buildings
+global_allowed_num_of_buildings = int
+
+global_allowed_num_of_manufactories
+global_allowed_num_of_manufactories = int
+
+build_cost
+build_cost = float
+
+build_time
+build_time = float
+
+great_project_upgrade_cost
+great_project_upgrade_cost = float
+
+great_project_upgrade_time
+great_project_upgrade_time = float
+
+global_monthly_devastation
+global_monthly_devastation = float
+
+global_prosperity_growth
+global_prosperity_growth = float
+
+administrative_efficiency
+administrative_efficiency = float
+
+free_concentrate_development
+free_concentrate_development = bool
+
+expand_infrastructure_cost_modifier
+expand_infrastructure_cost_modifier = float
+
+centralize_state_cost
+centralize_state_cost = float
+
+core_creation
+core_creation = float
+
+core_decay_on_your_own
+core_decay_on_your_own = float
+
+enemy_core_creation
+enemy_core_creation = float
+
+ignore_coring_distance
+ignore_coring_distance = bool
+&lt;tech&gt;_cost_modifier
+adm_tech_cost_modifier = float
+
+technology_cost
+technology_cost = float
+
+idea_cost
+idea_cost = float
+
+embracement_cost
+embracement_cost = float
+
+global_institution_spread
+global_institution_spread = float
+
+institution_spread_from_true_faith
+institution_spread_from_true_faith = float
+
+native_advancement_cost
+native_advancement_cost = float
+
+all_power_cost
+all_power_cost = float
+
+innovativeness_gain
+innovativeness_gain = float
+
+yearly_innovativeness
+yearly_innovativeness = float
+
+free_adm_policy
+free_adm_policy = int
+
+free_dip_policy
+free_dip_policy = int
+
+free_mil_policy
+free_mil_policy = int
+
+possible_adm_policy
+possible_adm_policy = int
+
+possible_dip_policy
+possible_dip_policy = int
+
+possible_mil_policy
+possible_mil_policy = int
+
+possible_policy
+possible_policy = int
+
+free_policy
+free_policy = int
+
+country_admin_power
+country_admin_power = int
+
+country_diplomatic_power
+country_diplomatic_power = int
+
+country_military_power
+country_military_power = int
+
+prestige
+prestige = float
+
+prestige_decay
+prestige_decay = float
+
+monthly_splendor
+monthly_splendor = int
+
+yearly_corruption
+yearly_corruption = float
+
+advisor_cost
+advisor_cost = float
+
+same_culture_advisor_cost
+same_culture_advisor_cost = float
+
+same_religion_advisor_cost
+same_religion_advisor_cost = float
+
+advisor_pool
+advisor_pool = int
+
+female_advisor_chance
+female_advisor_chance = float
+
+heir_chance
+heir_chance = float
+
+monthly_heir_claim_increase
+monthly_heir_claim_increase = float
+
+monthly_heir_claim_increase_modifier
+monthly_heir_claim_increase_modifier = float
+
+block_introduce_heir
+block_introduce_heir = bool
+
+monarch_admin_power
+monarch_admin_power = int
+
+monarch_diplomatic_power
+monarch_diplomatic_power = int
+
+monarch_military_power
+monarch_military_power = int
+
+adm_advisor_cost
+adm_advisor_cost = float
+
+dip_advisor_cost
+dip_advisor_cost = float
+
+mil_advisor_cost
+mil_advisor_cost = float
+
+monthly_support_heir_gain
+monthly_support_heir_gain = float
+
+power_projection_from_insults
+power_projection_from_insults = float
+
+monarch_lifespan
+monarch_lifespan = float
+
+local_heir_adm
+local_heir_adm = int
+
+local_heir_dip
+local_heir_dip = int
+
+local_heir_mil
+local_heir_mil = int
+
+national_focus_years
+national_focus_years = int
+
+yearly_absolutism
+yearly_absolutism = float
+
+max_absolutism
+max_absolutism = int
+
+max_absolutism_effect
+max_absolutism_effect = float
+
+legitimacy
+legitimacy = int
+
+republican_tradition
+republican_tradition = float
+
+devotion
+devotion = int
+
+horde_unity
+horde_unity = int
+
+meritocracy
+meritocracy = int
+&lt;government_power_type_id&gt;_gain_modifier
+monthly_militarized_society = float
+
+monthly_&lt;government_power_type_id&gt;
+monthly_militarized_society = float
+
+yearly_government_power
+yearly_government_power = float
+&lt;faction&gt;_influence
+&lt;faction&gt;_influence = float
+
+imperial_mandate
+imperial_mandate = float
+
+election_cycle
+election_cycle = int
+
+candidate_random_bonus
+candidate_random_bonus = int
+
+reelection_cost
+reelection_cost = float
+
+max_terms
+max_terms = int
+
+governing_capacity
+governing_capacity = int
+
+governing_capacity_modifier
+governing_capacity_modifier = float
+
+governing_cost
+governing_cost = float
+
+state_governing_cost
+state_governing_cost = float
+
+territories_governing_cost
+territories_governing_cost = float
+
+trade_company_governing_cost
+trade_company_governing_cost = float
+
+state_governing_cost_increase
+state_governing_cost_increase = int
+
+expand_administration_cost
+expand_administration_cost = float
+
+yearly_revolutionary_zeal
+yearly_revolutionary_zeal = float
+
+max_revolutionary_zeal
+max_revolutionary_zeal= int
+
+reform_progress_growth
+reform_progress_growth = float
+
+monthly_reform_progress
+monthly_reform_progress = float
+
+monthly_reform_progress_modifier
+monthly_reform_progress_modifier = float
+
+move_capital_cost_modifier
+move_capital_cost_modifier = float
+
+can_revoke_parliament_seats
+can_revoke_parliament_seats = bool
+
+parliament_backing_chance
+parliament_backing_chance = float
+
+parliament_effect_duration
+parliament_effect_duration = int
+
+parliament_debate_duration
+parliament_debate_duration = int
+
+parliament_chance_of_decision
+parliament_chance_of_decision = float
+
+num_of_parliament_issues
+num_of_parliament_issues = int
+
+max_possible_parliament_seats
+max_possible_parliament_seats = int
+&lt;estate&gt;_influence_modifier
+church_influence_modifier = float
+&lt;estate&gt;_loyalty_modifier
+church_loyalty_modifier = float
+&lt;estate&gt;_privilege_slots
+nobles_privilege_slots = int
+
+all_estate_influence_modifier
+all_estate_influence_modifier = float
+
+all_estate_loyalty_equilibrium
+all_estate_loyalty_equilibrium = float
+
+all_estate_possible_privileges
+all_estate_possible_privileges = int
+
+allow_free_estate_privilege_revocation
+allow_free_estate_privilege_revocation = bool
+
+loyalty_change_on_revoked
+loyalty_change_on_revoked = float
+
+estate_interaction_cooldown_modifier
+estate_interaction_cooldown_modifier = float
+
+imperial_authority
+imperial_authority = float
+
+imperial_authority_value
+imperial_authority_value = float
+
+free_city_imperial_authority
+free_city_imperial_authority = float
+
+reasons_to_elect
+reasons_to_elect = int
+
+imperial_mercenary_cost
+imperial_mercenary_cost = float
+
+max_free_cities
+max_free_cities = int
+
+max_electors
+max_electors = int
+
+legitimate_subject_elector
+legitimate_subject_elector = int
+
+manpower_against_imperial_enemies
+manpower_against_imperial_enemies = float
+
+imperial_reform_catholic_approval
+imperial_reform_catholic_approval = int
+
+culture_conversion_cost
+culture_conversion_cost = float
+
+culture_conversion_time
+culture_conversion_time = float
+
+num_accepted_cultures
+num_accepted_cultures = int
+
+promote_culture_cost
+promote_culture_cost = float
+
+relation_with_same_culture
+relation_with_same_culture = int
+
+relation_with_same_culture_group
+relation_with_same_culture_group = int
+
+relation_with_accepted_culture
+relation_with_accepted_culture = int
+
+relation_with_other_culture
+relation_with_other_culture = int
+
+can_not_declare_war
+can_not_declare_war = bool
+
+global_unrest
+global_unrest = int
+
+stability_cost_modifier
+stability_cost_modifier = float
+
+global_autonomy
+global_autonomy = float
+
+min_autonomy
+min_autonomy = int
+
+autonomy_change_time
+autonomy_change_time = float
+
+harsh_treatment_cost
+harsh_treatment_cost = float
+
+global_rebel_suppression_efficiency
+global_rebel_suppression_efficiency = float
+
+years_of_nationalism
+years_of_nationalism = int
+
+min_autonomy_in_territories
+min_autonomy_in_territories = float
+
+unrest_catholic_provinces
+unrest_catholic_provinces = int
+
+no_stability_loss_on_monarch_death
+no_stability_loss_on_monarch_death = bool
+
+overextension_impact_modifier
+overextension_impact_modifier = float
+
+vassal_forcelimit_bonus
+vassal_forcelimit_bonus = float
+
+vassal_naval_forcelimit_bonus
+vassal_naval_forcelimit_bonus = float
+
+vassal_manpower_bonus
+vassal_manpower_bonus = float
+
+vassal_sailors_bonus
+vassal_sailors_bonus = float
+
+vassal_income
+vassal_income = float
+
+overlord_naval_forcelimit
+overlord_naval_forcelimit = int
+
+overlord_naval_forcelimit_modifier
+overlord_naval_forcelimit_modifier = float
+
+can_transfer_vassal_wargoal
+can_transfer_vassal_wargoal = bool
+
+liberty_desire
+liberty_desire = int
+
+liberty_desire_from_subject_development
+liberty_desire_from_subject_development = float
+
+reduced_liberty_desire
+reduced_liberty_desire = int
+
+reduced_liberty_desire_on_same_continent
+reduced_liberty_desire_on_same_continent = int
+
+reduced_liberty_desire_on_other_continent
+reduced_liberty_desire_on_other_continent = int
+
+allow_client_states
+allow_client_states = bool
+
+colonial_type_change_cost_modifier
+colonial_type_change_cost_modifier = float
+
+colonial_subject_type_upgrade_cost_modifier
+colonial_subject_type_upgrade_cost_modifier = float
+
+years_to_integrate_personal_union
+years_to_integrate_personal_union = int
+
+chance_to_inherit
+chance_to_inherit = float
+
+monarch_power_tribute
+monarch_power_tribute = int
+
+tributary_conversion_cost_modifier
+tributary_conversion_cost_modifier = float
+
+annexation_relations_impact
+annexation_relations_impact = float
+
+spy_offence
+spy_offence = float
+
+global_spy_defence
+global_spy_defence = float
+
+fabricate_claims_cost
+fabricate_claims_cost = float
+
+claim_duration
+claim_duration = float
+
+can_chain_claim
+can_chain_claim = bool
+
+discovered_relations_impact
+discovered_relations_impact = float
+
+rebel_support_efficiency
+rebel_support_efficiency = float
+
+can_claim_states
+can_claim_states = bool
+
+no_claim_cost_increasement
+no_claim_cost_increasement = bool
+
+spy_action_cost_modifier
+spy_action_cost_modifier = float
+
+global_missionary_strength
+global_missionary_strength = float
+
+global_heretic_missionary_strength
+global_heretic_missionary_strength = float
+
+global_heathen_missionary_strength
+global_heathen_missionary_strength = float
+
+can_not_build_missionaries
+can_not_build_missionaries = bool
+
+may_not_convert_territories
+may_not_convert_territories = bool
+
+missionaries
+missionaries = int
+
+missionary_maintenance_cost
+missionary_maintenance_cost = float
+
+religious_unity
+religious_unity = float
+
+tolerance_own
+tolerance_own = int
+
+tolerance_heretic
+tolerance_heretic = int
+
+tolerance_heathen
+tolerance_heathen = int
+
+tolerance_of_heretics_capacity
+tolerance_of_heretics_capacity = int
+
+tolerance_of_heathens_capacity
+tolerance_of_heathens_capacity = int
+
+papal_influence
+papal_influence = float
+
+papal_influence_from_cardinals
+papal_influence_from_cardinals = bool
+
+appoint_cardinal_cost
+appoint_cardinal_cost = float
+
+curia_treasury_contribution
+curia_treasury_contribution = float
+
+curia_powers_cost
+curia_powers_cost = float
+
+monthly_church_power
+monthly_church_power = float
+
+church_power_modifier
+church_power_modifier = float
+
+monthly_fervor_increase
+monthly_fervor_increase = int
+
+yearly_patriarch_authority
+yearly_patriarch_authority = float
+
+monthly_piety
+monthly_piety = float
+
+monthly_piety_accelerator
+monthly_piety_accelerator = float
+
+harmonization_speed
+harmonization_speed = float
+
+yearly_harmony
+yearly_harmony = int
+
+monthly_karma
+monthly_karma = float
+
+monthly_karma_accelerator
+monthly_karma_accelerator = float
+
+yearly_karma_decay
+yearly_karma_decay = float
+
+yearly_doom_reduction
+yearly_doom_reduction = float
+
+yearly_authority
+yearly_authority = int
+
+enforce_religion_cost
+enforce_religion_cost = float
+
+prestige_per_development_from_conversion
+prestige_per_development_from_conversion = float
+
+warscore_cost_vs_other_religion
+warscore_cost_vs_other_religion = float
+
+establish_order_cost
+establish_order_cost = float
+
+global_religious_conversion_resistance
+global_religious_conversion_resistance = float
+
+relation_with_same_religion
+relation_with_same_religion = int
+
+relation_with_heretics
+relation_with_heretics = int
+
+relation_with_heathens
+relation_with_heathens = int
+
+reverse_relation_with_same_religion
+reverse_relation_with_same_religion = int
+
+reverse_relation_with_heretic_religion
+reverse_relation_with_heretic_religion = int
+
+reverse_relation_with_heathen_religion
+reverse_relation_with_heathen_religion = int
+
+no_religion_penalty
+no_religion_penalty = bool
+
+extra_manpower_at_religious_war
+extra_manpower_at_religious_war = bool
+
+can_not_build_colonies
+can_not_build_colonies = bool
+
+colonists
+colonists = int
+
+colonist_placement_chance
+colonist_placement_chance = float
+
+global_colonial_growth
+global_colonial_growth = int
+
+colony_cost_modifier
+colony_cost_modifier = int
+
+range
+range = float
+
+native_uprising_chance
+native_uprising_chance = float
+
+native_assimilation
+native_assimilation = float
+
+migration_cost
+migration_cost = float
+
+global_tariffs
+global_tariffs = float
+
+treasure_fleet_income
+treasure_fleet_income = float
+
+expel_minorities_cost
+expel_minorities_cost = float
+
+may_explore
+may_explore = bool
+
+auto_explore_adjacent_to_colony
+auto_explore_adjacent_to_colony = bool
+
+may_establish_frontier
+may_establish_frontier = bool
+
+free_maintenance_on_expl_conq
+free_maintenance_on_expl_conq = bool
+
+colony_development_boost
+colony_development_boost = int
+
+caravan_power
+caravan_power = float
+
+can_not_send_merchants
+can_not_send_merchants = bool
+
+merchants
+merchants = int
+
+placed_merchant_power
+placed_merchant_power = int
+
+placed_merchant_power_modifier
+placed_merchant_power_modifier = float
+
+global_trade_power
+global_trade_power = float
+
+global_foreign_trade_power
+global_foreign_trade_power = float
+
+global_own_trade_power
+global_own_trade_power = float
+
+global_prov_trade_power_modifier
+global_prov_trade_power_modifier = float
+
+global_trade_goods_size_modifier
+global_trade_goods_size_modifier = float
+
+global_trade_goods_size
+global_trade_goods_size = float
+
+trade_efficiency
+trade_efficiency = float
+
+trade_range_modifier
+trade_range_modifier = float
+
+trade_steering
+trade_steering = float
+
+global_ship_trade_power
+global_ship_trade_power = float
+
+privateer_efficiency
+privateer_efficiency = float
+
+embargo_efficiency
+embargo_efficiency = float
+
+ship_power_propagation
+ship_power_propagation = float
+
+center_of_trade_upgrade_cost
+center_of_trade_upgrade_cost = float
+
+trade_company_investment_cost
+trade_company_investment_cost = float
+
+mercantilism_cost
+mercantilism_cost = float
+
+reduced_trade_penalty_on_non_main_tradenode
+reduced_trade_penalty_on_non_main_tradenode = float
+
+max_attrition
+max_attrition = int
+
+attrition
+attrition = int
+
+local_hostile_attrition
+local_hostile_attrition = int
+
+local_attacker_dice_roll_bonus
+local_attacker_dice_roll_bonus = int
+
+local_defender_dice_roll_bonus
+local_defender_dice_roll_bonus = int
+
+Adds to the local defender dice roll bonus
+
+Additve
+
+fort_level
+fort_level = int
+
+garrison_growth
+garrison_growth = float
+
+local_defensiveness
+local_defensiveness = float
+
+local_fort_maintenance_modifier
+local_fort_maintenance_modifier = float
+
+local_garrison_size
+local_garrison_size = float
+
+local_garrison_damage
+local_garrison_damage = float
+
+local_assault_fort_cost_modifier
+local_assault_fort_cost_modifier = float
+
+local_assault_fort_ability
+local_assault_fort_ability = float
+
+local_friendly_movement_speed
+local_friendly_movement_speed = float
+
+local_hostile_movement_speed
+local_hostile_movement_speed = float
+
+local_manpower
+local_manpower = int
+
+local_manpower_modifier
+local_manpower_modifier = float
+
+local_regiment_cost
+local_regiment_cost = float
+
+regiment_recruit_speed
+regiment_recruit_speed = float
+
+supply_limit
+supply_limit = int
+
+supply_limit_modifier
+supply_limit_modifier = float
+
+local_own_coast_naval_combat_bonus
+local_own_coast_naval_combat_bonus = int
+
+local_has_banners
+local_has_banners = bool
+
+local_amount_of_banners
+local_amount_of_banners = float
+ / Multiplicative
+
+local_amount_of_cawa
+local_amount_of_cawa = float
+ / Multiplicative
+
+local_has_carolean
+local_has_carolean = bool
+
+local_amount_of_carolean
+local_amount_of_carolean = float
+ / Multiplicative
+
+local_amount_of_hussars
+local_amount_of_hussars = int
+ / Multiplicative
+
+local_has_streltsy
+local_has_streltsy = bool
+
+local_has_tercio
+local_has_tercio = bool
+
+local_has_musketeers
+local_has_musketeers = bool
+
+local_has_samurai
+local_has_samurai = bool
+
+local_has_mamluks
+local_has_mamluks = bool
+
+local_has_qizilbash
+local_has_qizilbash = bool
+
+local_naval_engagement_modifier
+local_naval_engagement_modifier = float
+
+local_sailors
+local_sailors = int
+
+local_sailors_modifier
+local_sailors_modifier = float
+
+local_ship_cost
+local_ship_cost = float
+
+local_ship_repair
+local_ship_repair = float
+
+ship_recruit_speed
+ship_recruit_speed = float
+
+blockade_force_required
+blockade_force_required = float
+
+hostile_disembark_speed
+hostile_disembark_speed = float
+
+hostile_fleet_attrition
+hostile_fleet_attrition = int
+
+block_slave_raid
+block_slave_raid = bool
+
+local_has_geobukseon
+local_has_geobukseon = bool
+
+local_has_man_of_war
+local_has_man_of_war = bool
+
+local_has_galleon
+local_has_galleon = bool
+
+local_has_galleass
+local_has_galleass = bool
+
+local_has_caravel
+local_has_caravel = bool
+
+local_has_voc_indiamen
+local_has_voc_indiamen = bool
+
+local_warscore_cost_modifier
+local_warscore_cost_modifier = float
+
+inflation_reduction_local
+inflation_reduction_local = float
+
+local_state_maintenance_modifier
+local_state_maintenance_modifier = float
+
+local_build_cost
+local_build_cost = float
+
+local_build_time
+local_build_time = float
+
+local_great_project_upgrade_cost
+local_great_project_upgrade_cost = float
+
+local_great_project_upgrade_time
+local_great_project_upgrade_time = float
+
+local_monthly_devastation
+local_monthly_devastation = float
+
+local_prosperity_growth
+local_prosperity_growth = float
+
+local_production_efficiency
+local_production_efficiency = float
+
+local_tax_modifier
+local_tax_modifier = float
+
+tax_income
+tax_income = int
+
+allowed_num_of_buildings
+allowed_num_of_buildings = int
+
+allowed_num_of_manufactories
+allowed_num_of_manufactories = int
+
+local_development_cost
+local_development_cost = float
+
+local_development_cost_modifier
+local_development_cost_modifier = float
+
+local_gold_depletion_chance_modifier
+local_gold_depletion_chance_modifier = float
+
+local_institution_spread
+local_institution_spread = float
+
+local_core_creation
+local_core_creation = float
+
+local_governing_cost
+local_governing_cost = float
+
+statewide_governing_cost
+statewide_governing_cost = float
+
+local_governing_cost_increase
+local_governing_cost_increase = int
+
+local_centralize_state_cost
+local_centralize_state_cost = float
+
+institution_growth
+institution_growth = int
+
+local_culture_conversion_cost
+local_culture_conversion_cost = float
+
+local_culture_conversion_time
+local_culture_conversion_time = float
+
+local_unrest
+local_unrest = int
+
+local_autonomy
+local_autonomy = float
+
+local_years_of_nationalism
+local_years_of_nationalism = int
+
+min_local_autonomy
+min_local_autonomy = int
+
+local_missionary_strength
+local_missionary_strength = float
+
+local_religious_unity_contribution
+local_religious_unity_contribution = float
+
+local_missionary_maintenance_cost
+local_missionary_maintenance_cost = float
+
+local_religious_conversion_resistance
+local_religious_conversion_resistance = float
+
+local_tolerance_of_heretics
+local_tolerance_of_heretics = int
+
+local_tolerance_of_heathens
+local_tolerance_of_heathens = int
+
+local_colonial_growth
+local_colonial_growth = int
+
+local_colonist_placement_chance
+local_colonist_placement_chance = float
+
+local_colony_cost_modifier
+local_colony_cost_modifier = int
+
+province_trade_power_modifier
+province_trade_power_modifier = float
+
+province_trade_power_value
+province_trade_power_value = float
+
+trade_goods_size_modifier
+trade_goods_size_modifier = float
+
+trade_goods_size
+trade_goods_size = float
+
+trade_value_modifier
+trade_value_modifier = float
+
+trade_value
+trade_value = int
+
+local_center_of_trade_upgrade_cost
+local_center_of_trade_upgrade_cost = float
