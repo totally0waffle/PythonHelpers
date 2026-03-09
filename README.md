@@ -15,3 +15,9 @@ Uses pillow scaling to attempt to increase the resolution of a target image. Thi
 
 # cleaner
 This allows a user to input a text file and simply extract the names of a variable aswell as the data that is tied to them. In my case I used this for EU4 modding by extracting what data type each variable is from the wikipage and removing the headers above each one. You can find input and output examples in their respective folders.
+
+# Eu4CCGen
+Generates an html document that lists 10,000 unused RGB codes from a BMP file. It only lists 10,000 to limit file size and time to open. Provides and HTML document with a built in checklist that allows you to easily track which color codes you have used as you utilize the tool aswell as providing an example color splotch.
+
+# HMapGen
+Generates an updated heightmap file from a provided file and attempts to translate your provinces.bmp file to a heightmap to remove a layer of busy work that comes with map modding. Currently this only works with matching file resolutions however either this script will be updated or another will be made in order to account for maps that have updated resolutions.
