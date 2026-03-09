@@ -21,3 +21,6 @@ Generates an html document that lists 10,000 unused RGB codes from a BMP file. I
 
 # HMapGen
 Generates an updated heightmap file from a provided file and attempts to translate your provinces.bmp file to a heightmap to remove a layer of busy work that comes with map modding. Currently this only works with matching file resolutions however either this script will be updated or another will be made in order to account for maps that have updated resolutions.
+
+# EU4PHRecolor
+Recolors a provide province map to use unused rgb codes based off a provided provinces.bmp file. This allows the user to quickly translate images generated on websites like fantasy map generator to something more eu4 safe for modding.
