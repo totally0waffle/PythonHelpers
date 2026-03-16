@@ -24,3 +24,6 @@ Generates an updated heightmap file from a provided file and attempts to transla
 
 # EU4PHRecolor
 Recolors a provide province map to use unused rgb codes based off a provided provinces.bmp file. This allows the user to quickly translate images generated on websites like fantasy map generator to something more eu4 safe for modding.
+
+# EU4ChievmentsUp - (**W.I.P**)
+Allows an eu4 player to generate a list of Eu4 achievments based off their profile and organizes it in a way so that a player can filter by country and conduct a run from a starting country with a list of endgoals and tips to accomplish said achievments. This script currently requires to user to download the EU4 wiki page (Go [Here]([https://eu4.paradoxwikis.com/Achievements]) -> Right-Click -> save-as) this also requires to user to have their steam api key handy as this parses steam servers to find achievments you have already completed. All of the required fields are at the top of the script in all caps and can be copy pasted. This script is entirely hosted locally but if you are worried feel free to copy paste the code into your own textfile to see what its doing. Currently the script is broken with its regex and is going to require tweaking.
