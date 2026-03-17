@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EU4 Achievement Ledger</title>
+
+<style>
+body{
+background:#2b2b2b;
+color:#e6d8a8;
+font-family:Georgia;
+}
+
+.container{
+width:1000px;
+margin:auto;
+}
+
+.achievement{
+border-bottom:1px solid #555;
+padding:10px;
+}
+
+.tips{
+font-style:italic;
+color:#cbbd8a;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #2b2b2b;
+  color: #e6d8a8;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2b2b2b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: #e6d8a8;
+  padding: 12px 16px;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+<script>
+const STEAM_API_KEY = "";
+const STEAM_ID = "";
+const APP_ID = 236850;
+
+// normalize text
+function normalize(text){
+    return text.trim().replace(/\u00a0/g, " ");
+}
+
+// regex for country detection (fixed version)
+function extractCountry(text){
+    let match = text.match(/(?:Playing|Starting)?\s*as ([A-Za-z ]+?)(?=\s(?:Make|Unite|Not|Religion|$))/);
+    return match ? match[1].trim() : "Any Nation";
+}
+
+// filter UI
+function filterCountry(country){
+    let sections = document.getElementsByClassName("country-section");
+    for(let s of sections){
+        s.style.display = (country==="All" || s.dataset.country===country)
+            ? "block" : "none";
+    }
+}
+
+// main loader
+async function loadData(){
+
+    document.getElementById("load-achievements").addEventListener("click", async () => {
+    const STEAM_API_KEY = document.getElementById("steam-key").value.trim();
+    const STEAM_ID = document.getElementById("steam-id").value.trim();
+
+    if(!STEAM_API_KEY || !STEAM_ID){
+        alert("Please enter both Steam API Key and Steam ID!");
+        return;
+    }
+
+    // clear previous content
+    document.getElementById("content").innerHTML = "";
+
+    // Load wiki JSON
+    const wikiData = await fetch("wiki.json").then(r => r.json());
+
+    // Fetch Steam achievements
+    try {
+        const steamData = await fetch(
+            `https://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v1/?key=${STEAM_API_KEY}&steamid=${STEAM_ID}&appid=236850`
+        ).then(r => r.json());
+
+        const schema = await fetch(
+            `https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=${STEAM_API_KEY}&appid=236850`
+        ).then(r => r.json());
+
+        // Locked achievements
+        let locked = new Set();
+        steamData.playerstats.achievements.forEach(a=>{
+            if(a.achieved === 0) locked.add(a.apiname);
+        });
+
+        // Steam lookup
+        let steamLookup = {};
+        schema.game.availableGameStats.achievements.forEach(a=>{
+            steamLookup[a.name] = {
+                title: a.displayName,
+                desc: a.description || ""
+            };
+        });
+
+        // Build country map
+        let countryMap = {};
+        for(let api of locked){
+            if(!steamLookup[api]) continue;
+
+            let title = steamLookup[api].title;
+            let desc = steamLookup[api].desc;
+
+            let entry = wikiData[title] || {};
+            let start = entry.start || "";
+            let tips = entry.notes || "";
+
+            // detect starting country
+            let match = start.match(/(?:Playing|Starting)?\s*as ([A-Za-z ]+?)(?=\s(?:Make|Unite|Not|Religion|$))/);
+            let country = match ? match[1].trim() : "Any Nation";
+
+            if(!countryMap[country]) countryMap[country] = [];
+            countryMap[country].push({title, desc, tips});
+        }
+
+        render(countryMap);
+
+    } catch(err){
+        console.error(err);
+        alert("Failed to load Steam achievements. Check API Key, Steam ID, or internet connection.");
+    }
+});
+
+// Render function same as before
+function render(countryMap){
+    let container = document.getElementById("content");
+    let countries = Object.keys(countryMap).sort();
+
+    // build dropdown
+    let dropdown = document.getElementById("dropdown-list");
+    dropdown.innerHTML = `<button onclick="filterCountry('All')">All</button>`;
+    countries.forEach(c => dropdown.innerHTML += `<button onclick="filterCountry('${c}')">${c}</button>`);
+
+    // build sections
+    countries.forEach(country => {
+        let section = document.createElement("div");
+        section.className = "country-section";
+        section.dataset.country = country;
+
+        section.innerHTML = `<h2>${country}</h2>`;
+        countryMap[country].forEach(ach => {
+            section.innerHTML += `
+                <div class="achievement">
+                    <b>${ach.title}</b><br>
+                    ${ach.desc}
+                    <div class="tips">${ach.tips}</div>
+                </div>
+            `;
+        });
+
+        container.appendChild(section);
+    });
+}}
+
+window.onload = loadData;
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>EU4 Achievement Ledger</h1>
+<div class="steam-inputs">
+  <label>Steam API Key: <input type="text" id="steam-key" placeholder="Enter your Steam API Key"></label>
+  <label>Steam ID: <input type="text" id="steam-id" placeholder="Enter your Steam ID"></label>
+  <button id="load-achievements">Load Achievements</button>
+</div>
+<div class="dropdown">
+<button class="dropbtn">Country Filter</button>
+<div id="dropdown-list" class="dropdown-content"></div>
+</div>
+
+<div id="content"></div>
+
+</div>
+
+</body>
+</html>
